@@ -1,0 +1,13 @@
+#slide-home{
+    .swiper-pagination{
+        bottom: 3rem !important;
+        .swiper-pagination-bullet{
+            margin: 10px;
+        }
+        .swiper-pagination-bullet{
+            width: 20px;
+            height: 20px;
+            background: #e36b85;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+#header-home {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  .container {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 40px;
+    img {
+      height: 46px;
+    }
+    .menu,
+    .menu-sub {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
