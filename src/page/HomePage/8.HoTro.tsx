@@ -21,7 +21,7 @@ const HoTro = ({}: Props) => {
           backgroundPosition: 'top center',
           backgroundSize: 'cover',
         }}
-      ></div>
+      />
       <img
         className="w-full"
         src="https://nipponpaint.com.vn/themes/wosh_sub/assets/images/bg-support.png"
@@ -42,7 +42,7 @@ const HoTro = ({}: Props) => {
           <div
             className="w-96 my-6 mx-auto"
             style={{ borderBottom: '1px solid #a0a6af' }}
-          ></div>
+          />
           <p className="text-lg">
             Hô biến ngôi nhà của bạn trở nên đầy màu sắc
           </p>

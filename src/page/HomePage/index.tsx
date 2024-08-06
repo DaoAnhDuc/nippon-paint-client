@@ -1,19 +1,18 @@
-import {} from 'react'
+import { } from 'react'
 import HeaderHome from './1.Header'
-import './style.scss'
 import Slide from './2.Slide'
-import MaMauSon from './3.MaMauSon'
-import PhoiMauNhaDep from './4.PhoiMauNhaDep'
-import MauSacPhongThuy from './5.MauSacPhongThuy'
-import SanPham from './6.SanPham'
-import XuHuongMauSac from './7.XuHuongMauSac'
-import HoTro from './8.HoTro'
+import MaMauSon from './3.GioiThieuCty'
+import PhoiMauNhaDep from './4.SanPham'
+import MauSacPhongThuy from './5.DichVuKyThuat'
+import SanPham from './6.DoiTacToanCau'
+import XuHuongMauSac from './7.TinTucSuKien'
 import Footer from './9.Footer'
+import './style.scss'
 type Props = {}
 
 const HomePage = ({}: Props) => {
   return (
-    <div className="text-base">
+    <div className="text-base overflow-x-hidden">
       <HeaderHome />
       <Slide />
       <MaMauSon/>
@@ -21,7 +20,7 @@ const HomePage = ({}: Props) => {
       <MauSacPhongThuy/>
       <SanPham/>
       <XuHuongMauSac/>
-      <HoTro/>
+      {/* <HoTro/> */}
       <Footer/>
     </div>
   );

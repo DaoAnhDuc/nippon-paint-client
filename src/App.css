@@ -14,9 +14,10 @@
 .btn-pink {
   background: var(--white);
   border: 1px solid var(--white);
-  padding: 10px 32px;
+  padding: 4px 16px;
   font-weight: bold;
   color: var(--pink);
+  cursor: pointer;
 }
 .btn-pink:hover {
   color: var(--white);
@@ -31,6 +32,7 @@
   padding: 10px 32px;
   font-weight: bold;
   color: var(--dark-blue);
+  cursor: pointer;
 }
 .btn-blue:hover {
   color: var(--white);
@@ -51,6 +53,7 @@
   background: var(--dark-blue);
   border: 1px solid var(--white);
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .btn-light-blue {
@@ -58,6 +61,7 @@
   border: 1px solid var(--white);
   padding: 10px 32px;
   font-weight: bold;
+  cursor: pointer;
   color: var(--light-blue);
 }
 .btn-light-blue:hover {
