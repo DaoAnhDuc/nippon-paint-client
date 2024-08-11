@@ -1,4 +1,4 @@
-import { } from 'react';
+import {} from 'react';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -15,7 +15,23 @@ const Slide = ({}: Props) => {
     'https://nipponpaint.com.vn/sites/default/files/2019-09/web_1-02.jpg',
   ];
   return (
-    <div id="slide-home" className="w-screen h-screen relative mt-12">
+    <div id="slide-home" className="w-screen h-screen relative mt-0">
+      <button
+        className="text-white font-bold text-lg"
+        style={{
+          width: 300,
+          height: 69,
+          backgroundImage:
+            'url("https://nipponpaint.com.vn/themes/wosh_sub/assets/images/btn-image.png")',
+          position: 'absolute',
+          zIndex: 2,
+          top: '17%',
+          left: '50%',
+          transform: 'translateX(-50%)',
+        }}
+      >
+        Tìm hiểu ngay
+      </button>
       <Swiper
         pagination={true}
         modules={[Pagination]}

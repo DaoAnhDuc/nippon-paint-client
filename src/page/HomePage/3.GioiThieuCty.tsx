@@ -1,14 +1,13 @@
-import {} from 'react'; // import required modules
+import { } from 'react'; // import required modules
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
 
-import PaintBg from './PaintBg';
 type Props = {};
+
+const COLOR = 'var(--pink)';
 
 export const chunkArray = (array: Array<any>, chunkSize: number) => {
   const result = [];
@@ -19,7 +18,7 @@ export const chunkArray = (array: Array<any>, chunkSize: number) => {
   return result;
 };
 
-const MaMauSon = ({}: Props) => {
+const GioiThieuCty = ({}: Props) => {
   // const imgs = [
   //   'https://nipponpaint.com.vn/sites/default/files/2019-04/ma-mau-son-nippon-01.jpg',
   //   'https://nipponpaint.com.vn/sites/default/files/2019-04/ma-mau-son-nippon-02.jpg',
@@ -29,10 +28,25 @@ const MaMauSon = ({}: Props) => {
   return (
     <div
       className="pt-24 pb-48 text-white relative"
-      style={{ background: 'var(--dark-blue)' }}
+      style={{ background: COLOR }}
     >
-      <PaintBg src="https://nipponpaint.com.vn/themes/wosh_sub/assets/images/top-blue-paint.png" />
-
+      <div
+        style={{
+          backgroundColor: COLOR,
+          maskPosition: 'top center',
+          maskSize: 'cover',
+          maskImage: `url(./images/mask.png)`,
+          position: 'absolute',
+          top: -110,
+          width: '100%',
+          display: 'block',
+          height: 120,
+          zIndex: 1,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'top center',
+          backgroundSize: 'cover',
+        }}
+      />
       {/* <div className="container grid xl:grid-cols-2 gap-8 sm:grid-cols-1">
         <div>
           <Swiper navigation={true} modules={[Navigation]}>
@@ -114,7 +128,11 @@ const MaMauSon = ({}: Props) => {
             />
           </div>
         </div>
-        <div className=" mt-16">
+        {/* <hr
+          className="w-4/5 mx-auto mt-12"
+          style={{ borderColor: '#dfdfdf45' }}
+        /> */}
+        {/* <div className=" mt-16">
           <p className="text-4xl text-center font-bold mb-8">ĐỘI NGỦ NHÂN SỰ</p>
           <Swiper
             navigation={true}
@@ -131,7 +149,7 @@ const MaMauSon = ({}: Props) => {
                       width: 'calc(100% - 200px)',
                       marginLeft: 'auto',
                       height: 300,
-                      background: '#3b5388',
+                      background: '#ec91a5',
                       borderRadius: 10,
                       position: 'relative',
                     }}
@@ -172,10 +190,10 @@ const MaMauSon = ({}: Props) => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default MaMauSon;
+export default GioiThieuCty;

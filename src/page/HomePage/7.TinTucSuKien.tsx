@@ -1,44 +1,79 @@
 type Props = {};
-
-const XuHuongMauSac = ({}: Props) => {
+const COLOR = '#cba299';
+const TinTucSuKien = ({}: Props) => {
   // const data = [
   //   {
   //     color: '#cba299',
   //     text: 'NP N 3372P',
-  //     img: 'https://nipponpaint.com.vn/sites/default/files/inline-images/z4881817488418_69792bff65b0bc260890bce40da8cab0_1.jpg',
+  //     img: 'https://nipponpaint.com.vn/sites/default/files/
+  // inline-images/z4881817488418_69792bff65b0bc260890bce40da8cab0_1.jpg',
   //   },
   //   {
   //     color: '#efda71',
   //     text: 'NP YO 1091T',
-  //     img: 'https://nipponpaint.com.vn/sites/default/files/inline-images/z4881817516739_cf54f139c8913671ec252529daa4ddfb_1.jpg',
+  //     img: 'https://nipponpaint.com.vn/sites/default/files/
+  // inline-images/z4881817516739_cf54f139c8913671ec252529daa4ddfb_1.jpg',
   //   },
   //   {
   //     color: '#6ed1d4',
   //     text: 'NP BGG 2742P',
-  //     img: 'https://nipponpaint.com.vn/sites/default/files/inline-images/z4881817502657_e4921469c67eff4a1f2972300f18adfd.jpg',
+  //     img: 'https://nipponpaint.com.vn/sites/default/files/
+  // inline-images/z4881817502657_e4921469c67eff4a1f2972300f18adfd.jpg',
   //   },
   //   {
   //     color: '#dbc4ad',
   //     text: 'NP N 3195P',
-  //     img: 'https://nipponpaint.com.vn/sites/default/files/inline-images/z4881817516693_f1642168f0ee103aafb8d923446de79a_1.jpg',
+  //     img: 'https://nipponpaint.com.vn/sites/default/files/
+  // inline-images/z4881817516693_f1642168f0ee103aafb8d923446de79a_1.jpg',
   //   },
   //   {
   //     color: '#bdd888',
   //     text: 'NP BGG 1672T',
-  //     img: 'https://nipponpaint.com.vn/sites/default/files/inline-images/z4881817474070_23cb4d6f54a9fbe27c47159174af5455.jpg',
+  //     img: 'https://nipponpaint.com.vn/sites/default/files/
+  // inline-images/z4881817474070_23cb4d6f54a9fbe27c47159174af5455.jpg',
   //   },
   // ];
   // const [activeIndex, _setActiveIndex] = useState(0);
   // const listImage = data.map((i) => i.img);
   // const activeItem: any = data[activeIndex];
+
+  const data: any[] = [
+    {
+      title: 'Hiện trường vụ rơi máy bay thảm khốc ở Brazil',
+      description:
+        'Máy bay ATR-72-500 của hãng Voepass (Brazil) rơi với tốc độ 237  km/h, mất 5.000 m độ cao chỉ trong hơn 1 phút.',
+      img: 'https://osky.1cdn.vn/thumbs/900x600/2024/08/10/guj6ypfxeaaq6qn.jpeg',
+    },
+    {
+      title: 'Thủ tục cần biết cho khách đi máy bay',
+      description: '',
+      img: 'https://osky.1cdn.vn/thumbs/900x600/2024/08/08/opensky_5648481830190_d6afac973fbed380f04fe4d021a1d2c2.jpg',
+    },
+    {
+      title: 'Máy bay cũng có quốc tịch',
+      description: '',
+      img: 'https://osky.1cdn.vn/thumbs/900x600/2024/08/09/opensky_z62_7592-215a40c019d09e0ab87e9175c3eaeab7.jpg',
+    },
+    {
+      title: 'Biển Đà Nẵng lọt top đẹp nhất thế giới',
+      description: '',
+      img: 'https://osky.1cdn.vn/thumbs/900x600/2024/08/08/1672740553-bai-bien-my-khe-dia-diem-du-lich-da-nang-attdad03-14-1-(1).jpeg',
+    },
+    {
+      title:
+        'Lý do ít chuyến bay ngang qua eo biển Drake - vùng biệt lập ở Nam Cực',
+      description: '',
+      img: 'https://osky.1cdn.vn/thumbs/900x600/2024/08/05/antartica-air-cruise-express-air.jpg',
+    },
+  ];
   return (
     <div
-      className="pt-16 pb-48 text-black relative"
-      style={{ background: '#f5f5f5' }}
+      className="pt-16 pb-48 text-white relative"
+      style={{ background: COLOR }}
     >
       <div
         style={{
-          backgroundColor: '#f5f5f5',
+          backgroundColor: COLOR,
           maskPosition: 'top center',
           maskSize: 'cover',
           maskImage: `url(./images/mask.png)`,
@@ -54,70 +89,33 @@ const XuHuongMauSac = ({}: Props) => {
         }}
       />
       <div className="container">
-        <p className="font-bold text-4xl my-4 text-center">TIN TỨC SỰ KIỆN</p>
-        <div className="grid xl:grid-cols-4  sm:grid-cols-2 gap-8 mt-16">
-          <div className="col-span-1">
-            <div className="px-4">
-              {[1, 2, 3,].map((i) => (
-                <div key={i} className="mb-6 flex flex-col gap-2">
-                  <img
-                    className="w-full h-60"
-                    src="https://file.hstatic.net/1000109642/article/xe-mau-trang-phong-thuy_7fa210d056404f2a901cda1e0ee99746_large.jpg"
-                    alt=""
-                  />
-                  <div className="text-sm">
-                    <p className="opacity-80">Thể loại</p>
-                    <p className="font-bold ">
-                      CHỌN MÀU XE HỢP TUỔI THEO THUYẾT NGŨ HÀNH CỦA ĐẤT TRỜI
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <p className="font-bold text-4xl mb-16 text-center">TIN TỨC SỰ KIỆN</p>
+        <div
+          className="grid grid-cols-2 gap-3 p-8  text-white rounded-3xl"
+          style={{ background: '#d3a9a0' }}
+        >
+          <div className="pr-3" style={{ borderRight: '1px solid #dfdfdf42' }}>
+            <img src={data[0].img} alt="" className="w-full" />
+            <p className="font-bold text-2xl mt-2">{data[0].title}</p>
+            <p className="mt-2">{data[0].description}</p>
           </div>
-          <div className="col-span-2">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div className="flex gap-4 mb-6" key={i}>
-                <img
-                  className="w-60 h-40"
-                  src="https://file.hstatic.net/1000109642/article/xe-mau-trang-phong-thuy_7fa210d056404f2a901cda1e0ee99746_large.jpg"
-                  alt=""
-                />
-                <div>
-                  <p className="opacity-80">Thể loại</p>
-                  <p className="font-bold text-lg">
-                    CHỌN MÀU XE HỢP TUỔI THEO THUYẾT NGŨ HÀNH CỦA ĐẤT TRỜI
-                  </p>
-                  <p className="mt-0 text-sm">
-                    Chương trình Sáng kiến An toàn Giao thông Việt Nam năm 2024
-                    đặt mục tiêu tìm kiếm giải pháp ứng dụng công nghệ trong
-                    quản lý, cảnh báo, giảm thiểu tỷ lệ tai nạn giao thông.
-                  </p>
-                </div>
+          <div className="grid grid-cols-2 gap-4">
+            {data.splice(1, 4).map((item: any, index: number) => (
+              <div key={index}>
+                {index !== 0 && index !== 1 && (
+                  <hr
+                    className="pb-4"
+                    style={{
+                      borderColor: '#dfdfdf42',
+                      width: '80%',
+                      margin: 'auto',
+                    }}
+                  />
+                )}
+                <img src={item.img} alt="" className="w-full" />
+                <p className="font-bold mt-2">{item.title}</p>
               </div>
             ))}
-          </div>
-          <div className="col-span-1">
-            <div className="px-4" style={{ border: '1px solid #dfdfdf' }}>
-              <p className="font-bold text-blue-700 text-xl my-4">
-                Bài viết gần đây
-              </p>
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="mb-6 flex gap-2">
-                  <img
-                    className="w-28 h-20"
-                    src="https://file.hstatic.net/1000109642/article/xe-mau-trang-phong-thuy_7fa210d056404f2a901cda1e0ee99746_large.jpg"
-                    alt=""
-                  />
-                  <div className="text-sm">
-                    <p className="opacity-80">Thể loại</p>
-                    <p className="font-bold ">
-                      CHỌN MÀU XE HỢP TUỔI THEO THUYẾT NGŨ HÀNH CỦA ĐẤT TRỜI
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
@@ -214,4 +212,4 @@ const XuHuongMauSac = ({}: Props) => {
   );
 };
 
-export default XuHuongMauSac;
+export default TinTucSuKien;

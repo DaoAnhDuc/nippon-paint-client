@@ -9,14 +9,15 @@ import { Navigation } from 'swiper/modules';
 import { chunkArray } from './3.GioiThieuCty';
 type Props = {};
 
-const PhoiMauNhaDep = ({}: Props) => {
+const COLOR = 'var(--dark-blue)'
+const SanPham = ({}: Props) => {
   // const imgs = [
   //   'https://nipponpaint.com.vn/sites/default/files/2019-04/%5BNipponPaint%5D%5BDesktop%5D01-Homepage_13.jpg',
   //   'https://nipponpaint.com.vn/sites/default/files/2019-04/%5BNipponPaint%5D%5BDesktop%5D01-Homepage_15.jpg',
   //   'https://nipponpaint.com.vn/sites/default/files/2019-04/%5BNipponPaint%5D%5BDesktop%5D01-Homepage_18.jpg',
   // ];
 
-  const sonoto: any[] = [
+  const sonoto: Array<any> = [
     {
       img: 'https://product.hstatic.net/1000109642/product/gen_303_urethane_primer_grey_f22810997a3c403c9318b933d1ca1004_large.jpg',
       text: 'GEN 303 Urethane Primer Grey',
@@ -52,7 +53,7 @@ const PhoiMauNhaDep = ({}: Props) => {
     },
   ];
 
-  const vattuphutro: any[] = [
+  const vattuphutro: Array<any> = [
     {
       img: 'https://product.hstatic.net/1000109642/product/car_brite_black_p_c_c49a6d082d4f479d8c85177eea566863_80dbc22ffa2d416eaf0fe1f1da02ff1a_large.jpg',
       text: 'BLACK PEARL CERAMIC COATING KIT  - Bộ sản phẩm phủ Cerami...',
@@ -63,7 +64,7 @@ const PhoiMauNhaDep = ({}: Props) => {
     },
   ];
 
-  const chamsocoto: any[] = [
+  const chamsocoto: Array<any> = [
     {
       img: 'https://product.hstatic.net/1000109642/product/black-pearl-speed-spray_38ae0611adcc4ec5b7582b8080b7649b_b6f7a18e98b34ef09d4cead316b7bff7_large.png',
       text: 'BLACK PEARL SIO2 SPRAY - DUNG DỊCH XỊT PHỦ BẢO DƯỠNG LỚP ...',
@@ -94,7 +95,7 @@ const PhoiMauNhaDep = ({}: Props) => {
     },
   ];
 
-  const renderCard = (data: any[]) => {
+  const renderCard = (data: Array<any>) => {
     return (
       <Swiper
         navigation={true}
@@ -102,9 +103,9 @@ const PhoiMauNhaDep = ({}: Props) => {
         className="mySwiper"
         style={{ border: 'none' }}
       >
-        {chunkArray(data, 4).map((item: any[], index: number) => (
+        {chunkArray(data, 5).map((item: Array<any>, index: number) => (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-4 gap-6 px-10 py-6">
+            <div className="grid grid-cols-5 gap-6 py-6">
               {item.map((i, idx) => {
                 return (
                   <div
@@ -118,14 +119,12 @@ const PhoiMauNhaDep = ({}: Props) => {
                     <div className="bg-white pt-4">
                       <img
                         src={i.img}
-                        className="h-72 object-contain bg-white w-full"
+                        className="h-60 object-contain bg-white w-full"
                         alt=""
                       />
                     </div>
                     <div className=" text-black px-4 py-4 bg-white min-h-24 flex items-center justify-center">
-                      <p className="font-bold text-lg text-center">
-                        {i.text}
-                      </p>
+                      <p className="font-bold text-lg text-center">{i.text}</p>
                     </div>
                   </div>
                 );
@@ -139,8 +138,8 @@ const PhoiMauNhaDep = ({}: Props) => {
 
   return (
     <div
-      className="pt-24 pb-48 relative text-black"
-      style={{ background: '#f5f5f5)' }}
+      className="pt-24 pb-48 relative text-white"
+      style={{ background: COLOR }}
     >
       {/* <PaintBg src="https://nipponpaint.com.vn/themes/wosh_sub/assets/images/top-pink-paint.png" /> */}
       {/* <div className="container">
@@ -186,7 +185,7 @@ const PhoiMauNhaDep = ({}: Props) => {
       </div> */}
       <div
         style={{
-          backgroundColor: '#f5f5f5',
+          backgroundColor: COLOR,
           maskPosition: 'top center',
           maskSize: 'cover',
           maskImage: `url(./images/mask.png)`,
@@ -207,32 +206,26 @@ const PhoiMauNhaDep = ({}: Props) => {
           <div>
             <p className="font-bold text-3xl">SƠN Ô TÔ</p>
           </div>
-          <div className="btn-pink">Xem tất cả</div>
+          <div className="btn-blue">Xem tất cả</div>
         </div>
-        <div className=" mt-0 ">
-          {renderCard(sonoto)}
-        </div>
-        <div className="flex justify-between items-end mt-16">
+        <div className=" mt-0 ">{renderCard(sonoto)}</div>
+        <div className="flex justify-between items-end mt-8">
           <div>
             <p className="font-bold text-3xl">VẬT TƯ PHỤ TRỢ</p>
           </div>
-          <div className="btn-pink">Xem tất cả</div>
+          <div className="btn-blue">Xem tất cả</div>
         </div>
-        <div className=" mt-0 ">
-          {renderCard(vattuphutro)}
-        </div>
-        <div className="flex justify-between items-end mt-16">
+        <div className=" mt-0 ">{renderCard(vattuphutro)}</div>
+        <div className="flex justify-between items-end mt-8">
           <div>
             <p className="font-bold text-3xl">CHĂM SÓC Ô TÔ</p>
           </div>
-          <div className="btn-pink">Xem tất cả</div>
+          <div className="btn-blue">Xem tất cả</div>
         </div>
-        <div className=" mt-0 ">
-          {renderCard(chamsocoto)}
-        </div>
+        <div className=" mt-0 ">{renderCard(chamsocoto)}</div>
       </div>
     </div>
   );
 };
 
-export default PhoiMauNhaDep;
+export default SanPham;

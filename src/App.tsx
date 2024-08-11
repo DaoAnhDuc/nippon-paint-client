@@ -10,6 +10,8 @@ import { useEffect } from 'react';
 import LoadingTopBar from './components/base/loading/LoadingTopBar';
 // import Theme from './components/base/theme/Theme';
 import 'antd/dist/reset.css';
+import { useLocation } from 'react-router-dom';
+import './App.css';
 import i18n from './i18n';
 import { setLanguge } from './reducers/slice/themeLanguageSlice';
 import {
@@ -20,8 +22,6 @@ import {
 } from './redux/store';
 import { serviceConfig } from './services/serviceManager';
 import styleModule from './style.module.scss';
-import { useLocation } from 'react-router-dom';
-import './App.css'
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { useToken } = theme;
 
@@ -64,6 +64,13 @@ const App = () => {
           <Layout className={styleModule.monitor}>
             <LoadingTopBar />
             <Router />
+            <div className='fixed bottom-40 right-8 z-20'>
+              <img
+                className="w-12 h-12"
+                src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
+                alt=""
+              />
+            </div>
           </Layout>
         </div>
       </I18nextProvider>

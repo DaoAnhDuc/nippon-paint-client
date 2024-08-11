@@ -1,13 +1,14 @@
 import { } from 'react'
 import HeaderHome from './1.Header'
 import Slide from './2.Slide'
-import MaMauSon from './3.GioiThieuCty'
-import PhoiMauNhaDep from './4.SanPham'
-import MauSacPhongThuy from './5.DichVuKyThuat'
-import SanPham from './6.DoiTacToanCau'
-import XuHuongMauSac from './7.TinTucSuKien'
+import GioiThieuCty from './3.GioiThieuCty'
+import SanPham from './4.SanPham'
+import DichVuKyThuat from './5.DichVuKyThuat'
+import DoiTacToanCau from './6.DoiTacToanCau'
+import TinTucSuKien from './7.TinTucSuKien'
 import Footer from './9.Footer'
 import './style.scss'
+import ChungNhan from './8.Chungnhan'
 type Props = {}
 
 const HomePage = ({}: Props) => {
@@ -15,13 +16,13 @@ const HomePage = ({}: Props) => {
     <div className="text-base overflow-x-hidden">
       <HeaderHome />
       <Slide />
-      <MaMauSon/>
-      <PhoiMauNhaDep/>
-      <MauSacPhongThuy/>
-      <SanPham/>
-      <XuHuongMauSac/>
-      {/* <HoTro/> */}
-      <Footer/>
+      <GioiThieuCty />
+      <SanPham />
+      <DichVuKyThuat />
+      <DoiTacToanCau />
+      <TinTucSuKien />
+      <ChungNhan/>
+      <Footer />
     </div>
   );
 }
