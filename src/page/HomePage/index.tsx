@@ -9,6 +9,7 @@ import TinTucSuKien from './7.TinTucSuKien'
 import Footer from './9.Footer'
 import './style.scss'
 import ChungNhan from './8.Chungnhan'
+import XuHuongMauSac from './10.MauSac'
 type Props = {}
 
 const HomePage = ({}: Props) => {
@@ -18,6 +19,7 @@ const HomePage = ({}: Props) => {
       <Slide />
       <GioiThieuCty />
       <SanPham />
+      <XuHuongMauSac/>
       <DichVuKyThuat />
       <DoiTacToanCau />
       <TinTucSuKien />
