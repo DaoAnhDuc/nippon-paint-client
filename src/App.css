@@ -3,12 +3,15 @@
 @tailwind utilities;
 :root {
   --dark-blue: #132959;
+  --blue:#127ec2;
   --light-blue: #5d98d1;
   --white: hwb(0 100% 0%);
   --pink: #e46c86;
   --be: #edd3ae;
   --sliver: #d7d6d6;
   --red: #cc0000;
+  --yellow: #f7eb22
+  --orange: #ed4d2c
 }
 
 .btn-pink {

@@ -1,0 +1,17 @@
+#san-pham {
+  .sanpham-item {
+    cursor: pointer;
+    &:hover {
+      .description {
+        display: flex;
+      }
+      img{
+        transform: scale(1.05);
+        border-radius: 2.6rem;
+      }
+    }
+    .description {
+      display: none;
+    }
+  }
+}

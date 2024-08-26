@@ -37,7 +37,7 @@ const TinTucSuKien = ({}: Props) => {
   // const listImage = data.map((i) => i.img);
   // const activeItem: any = data[activeIndex];
 
-  const data: any[] = [
+  const data: Array<any> = [
     {
       title: 'Hiện trường vụ rơi máy bay thảm khốc ở Brazil',
       description:

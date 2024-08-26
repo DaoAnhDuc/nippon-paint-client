@@ -37,7 +37,7 @@ const HeaderHome = ({}: Props) => {
           <div style={{ flex: 1 }} />
           <div className="menu-sub" style={{gap:10}}>
             {/* <div className="text-lg font-bold">Đối tác toàn cầu</div> */}
-            <Button icon={<SearchOutlined />} type="text"></Button>
+            <Button icon={<SearchOutlined />} type="text"/>
             <Select
               style={{ width: 120, border: 'none' }}
               options={[
@@ -50,7 +50,7 @@ const HeaderHome = ({}: Props) => {
                   value: 'EN',
                 },
               ]}
-            ></Select>
+            />
           </div>
         </div>
       </div>

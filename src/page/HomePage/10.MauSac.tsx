@@ -55,7 +55,7 @@ const XuHuongMauSac = ({}: Props) => {
           backgroundPosition: 'top center',
           backgroundSize: 'cover',
         }}
-      ></div>
+      />
       <div className="container text-white">
         <div className=" grid xl:grid-cols-2 gap-10 sm:grid-cols-1">
           <div
@@ -73,9 +73,10 @@ const XuHuongMauSac = ({}: Props) => {
             <div
               className="my-8 mx-auto"
               style={{ borderBottom: '1px solid #ffffff33', width: '80%' }}
-            ></div>
+            />
             <div className="flex gap-5 justify-center">
               {data.map((i, index) => (
+                
                 <div
                   key={index}
                   onClick={() => setActiveIndex(index)}
@@ -87,7 +88,7 @@ const XuHuongMauSac = ({}: Props) => {
                       activeIndex === index ? '2px solid #fff' : 'transparent',
                     boxSizing: 'content-box',
                   }}
-                ></div>
+                />
               ))}
             </div>
             <p className="mt-8">{activeItem.text}</p>
