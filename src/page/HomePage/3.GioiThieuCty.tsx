@@ -7,7 +7,6 @@ import 'swiper/css/navigation';
 
 type Props = {};
 
-const COLOR = 'var(--pink)';
 
 export const chunkArray = (array: Array<any>, chunkSize: number) => {
   const result = [];
@@ -26,79 +25,14 @@ const GioiThieuCty = ({}: Props) => {
   // ];
 
   return (
-    <div
-      className="pt-24 pb-48 text-white relative"
-      style={{ background: COLOR }}
-    >
-      <div
-        style={{
-          backgroundColor: COLOR,
-          maskPosition: 'top center',
-          maskSize: 'cover',
-          maskImage: `url(./images/mask.png)`,
-          position: 'absolute',
-          top: -110,
-          width: '100%',
-          display: 'block',
-          height: 120,
-          zIndex: 1,
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'top center',
-          backgroundSize: 'cover',
-        }}
-      />
-      {/* <div className="container grid xl:grid-cols-2 gap-8 sm:grid-cols-1">
-        <div>
-          <Swiper navigation={true} modules={[Navigation]}>
-            {chunkArray(materialColors, 16).map((arr, index) => (
-              <SwiperSlide
-                key={index}
-                className="flex flex-wrap"
-                style={{ width: '460px !important' }}
-              >
-                <table className="m-auto">
-                  {chunkArray(arr, 4).map((arr2, index2) => (
-                    <tr key={index2}>
-                      {arr2.map((i) => (
-                        <td key={i} className="p-1">
-                          <div
-                            className="w-32 h-28 rounded-sm"
-                            style={{ background: i }}
-                          />
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </table>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div>
-          <p className="text-4xl text-white font-bold tracking-wide">
-            MÃ MÀU SƠN NIPPON
-          </p>
-          <p className="text-white mt-4 text-xl">
-            Thỏa sức lựa chọn màu sắc cho không gian sống từ thư viện với hơn
-            2000 mã màu sơn của chúng tôi.
-          </p>
-          <div className="mt-8">
-            <button className="btn-pink">Tìm mã màu sơn</button>
-          </div>
-          <div className="flex gap-3 mt-8">
-            {imgs.map((i, index) => (
-              <img key={index} src={i} className="w-1/3 object-cover h-60" />
-            ))}
-          </div>
-        </div>
-      </div> */}
-      <div className="container text-white">
+    <div className="pt-24 pb-48 text-white relative">
+      <div className="container text-black">
         <p className="text-4xl text-center font-bold">GIỚI THIỆU CÔNG TY </p>
         <div className="grid xl:grid-cols-2 gap-4 sm:grid-cols-1 mt-8">
           <div className="flex justify-end items-center sm:justify-center">
             <img
               style={{ height: 480, maxWidth: '100%', objectFit: 'contain' }}
-              src="https://theme.hstatic.net/1000109642/1000599395/14/aboutus_img.jpg?v=155"
+              src="https://demo.themesberg.com/landwind/images/hero.png"
               alt=""
             />
           </div>
