@@ -6,6 +6,7 @@
     "@ant-design/icons": "^5.0.1",
     "@casl/ability": "^6.3.3",
     "@casl/react": "^3.1.0",
+    "@headlessui/react": "^2.1.5",
     "@react-hook/resize-observer": "^2.0.2",
     "@reduxjs/toolkit": "^1.9.1",
     "@stdlib/string-acronym": "^0.1.0",

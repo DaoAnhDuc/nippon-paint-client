@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 type Props = { data : {
     title: string
     query: string
-    data: any[]
+    data: Array<any>
 }};
 
 const SanPham = ({data}: Props) => {
