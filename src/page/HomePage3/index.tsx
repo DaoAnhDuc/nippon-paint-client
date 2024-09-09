@@ -201,7 +201,7 @@ const HomePage3 = ({}: Props) => {
       <div
         style={{
           backgroundImage:
-            'url("https://farpaint.vn/wp-content/uploads/2020/05/banner-son-farpaint.jpg")',
+            'url("https://kiavietnam.com.vn/storage/product/sportage/heroes-banner-xanh.png")',
         }}
       >
         <Container className="flex flex-wrap ">
