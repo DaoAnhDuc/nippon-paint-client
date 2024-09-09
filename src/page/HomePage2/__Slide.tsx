@@ -7,10 +7,10 @@ type Props = {};
 import { Navigation } from 'swiper/modules';
 const Slide = ({}: Props) => {
   const data = [
-    'https://nipponpaint.com.vn/sites/default/files/2022-12/z3953467922281_2310dba07ab9908271888fc8cfc10e6d.jpg',
-    'https://nipponpaint.com.vn/sites/default/files/2023-06/z4395142615643_edaa32bb1fa9e2dfee743dc53b9cbbca.jpg',
-    'https://nipponpaint.com.vn/sites/default/files/2023-11/z4856999348765_8db9324aac419d034ae5cb9255f2ae8e.jpg',
-    'https://nipponpaint.com.vn/sites/default/files/2019-09/web_1-02.jpg',
+    'https://png.pngtree.com/thumb_back/fw800/background/20240729/pngtree-the-procedure-of-painting-a-car-in-the-service-center-image_15933746.jpg',
+    'https://png.pngtree.com/thumb_back/fw800/background/20240312/pngtree-auto-car-repair-service-center-mechanic-examining-suspension-image_15640925.jpg',
+    'https://png.pngtree.com/thumb_back/fw800/background/20240729/pngtree-the-procedure-of-painting-a-car-in-the-service-center-image_15933745.jpg',
+    'https://png.pngtree.com/thumb_back/fw800/background/20240402/pngtree-broken-car-on-tow-truck-after-traffic-accident-on-the-road-image_15649472.jpg',
   ];
   return (
     <div className="w-full h-screen">

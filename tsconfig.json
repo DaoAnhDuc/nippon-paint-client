@@ -23,5 +23,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src", "webpack.config.js", "src/pages/403/.tsx"],
-  "typeRoots": ["./node_modules/@types", "./src/@types"]
+  "typeRoots": ["./node_modules/@types", "./src/@types"],
+  "max-line-length": [false]
 }

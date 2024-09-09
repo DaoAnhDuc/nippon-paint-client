@@ -107,7 +107,7 @@ const HomePage3 = ({}: Props) => {
         <nav className="container relative flex flex-wrap items-center justify-between mx-auto lg:justify-between xl:px-1">
           {/* Logo  */}
           <Link to="/">
-            <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+            <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 ">
               <span>
                 <img
                   className="h-20"
@@ -135,7 +135,7 @@ const HomePage3 = ({}: Props) => {
               <>
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -164,7 +164,7 @@ const HomePage3 = ({}: Props) => {
                       <Link
                         key={index}
                         to="/"
-                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md  hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100  focus:outline-none"
                       >
                         {item}
                       </Link>
@@ -188,7 +188,7 @@ const HomePage3 = ({}: Props) => {
                 <li className="mr-3 nav__item" key={index}>
                   <Link
                     to="/"
-                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md  hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none "
                   >
                     {menu}
                   </Link>
@@ -207,14 +207,15 @@ const HomePage3 = ({}: Props) => {
         <Container className="flex flex-wrap ">
           <div className="flex items-center w-full lg:w-1/2">
             <div className="max-w-2xl mb-8">
-              <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-3xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white">
+              <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-3xl lg:leading-tight xl:text-4xl xl:leading-tight ">
                 NHÀ PHÂN PHỐI HÀNG ĐẦU CÁC SẢN PHẨM CHĂM SÓC XE
               </h1>
-              <p className="py-3 text-lg leading-normal text-gray-500 lg:text-lg xl:text-xl dark:text-gray-300">
+              <p className="py-3 text-lg leading-normal text-gray-500 lg:text-lg xl:text-xl ">
                 Được thành lập từ năm 2018 bởi những người đam mê chăm sóc xe,
                 SG INVEST nhà phân phối hàng đầu của các sản phẩm sơn Nippon,
                 chăm sóc xe Car Brite, phủ Graphene và kính GP...
               </p>
+              {/* tslint:disable:max-line-length */}
               <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
                 <a
                   href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
@@ -246,17 +247,14 @@ const HomePage3 = ({}: Props) => {
       </div>
       <Container>
         <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-gray-700 dark:text-white">
+          <div className="text-xl text-center text-gray-700 ">
             Được <span className="text-indigo-600">2000+</span> khách hàng trên
             thế giới tin dùng
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
             {doitactoancau.map((i, index) => (
-              <div
-                key={index}
-                className="pt-2 text-gray-400 dark:text-gray-400"
-              >
+              <div key={index} className="pt-2 text-gray-400 ">
                 <img src={i} alt="" className="h-28" />
               </div>
             ))}
@@ -399,7 +397,7 @@ const HomePage3 = ({}: Props) => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </button>
             </div>
@@ -433,7 +431,7 @@ const HomePage3 = ({}: Props) => {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
               </div>
@@ -466,7 +464,7 @@ const HomePage3 = ({}: Props) => {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
               </div>
@@ -476,7 +474,7 @@ const HomePage3 = ({}: Props) => {
         <div className="bg-white py-6">
           <div className="w-full py-3">
             <h2 className="text-gray-800 text-2xl font-bold">
-              <span className="inline-block h-5 border-l-4 border-red-600 mr-2"></span>
+              <span className="inline-block h-5 border-l-4 border-red-600 mr-2" />
               Tin tức
             </h2>
           </div>
@@ -508,7 +506,7 @@ const HomePage3 = ({}: Props) => {
                     </p>
                     <div className="pt-2">
                       <div className="text-gray-100">
-                        <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                        <div className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                         Europe
                       </div>
                     </div>
@@ -539,7 +537,7 @@ const HomePage3 = ({}: Props) => {
                         </a>
                         <div className="pt-1">
                           <div className="text-gray-100">
-                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                             Techno
                           </div>
                         </div>
@@ -567,7 +565,7 @@ const HomePage3 = ({}: Props) => {
                         </a>
                         <div className="pt-1">
                           <div className="text-gray-100">
-                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                             Architecture
                           </div>
                         </div>
@@ -594,7 +592,7 @@ const HomePage3 = ({}: Props) => {
                         </a>
                         <div className="pt-1">
                           <div className="text-gray-100">
-                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                             Interior
                           </div>
                         </div>
@@ -622,7 +620,7 @@ const HomePage3 = ({}: Props) => {
                         </a>
                         <div className="pt-1">
                           <div className="text-gray-100">
-                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                            <div className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                             Lifestyle
                           </div>
                         </div>
@@ -640,7 +638,7 @@ const HomePage3 = ({}: Props) => {
               <div className="flex-shrink max-w-full w-full overflow-hidden">
                 <div className="w-full py-3">
                   <h2 className="text-gray-800 text-2xl font-bold">
-                    <span className="inline-block h-5 border-l-4 border-red-600 mr-2"></span>
+                    <span className="inline-block h-5 border-l-4 border-red-600 mr-2" />
                     Sự kiện
                   </h2>
                 </div>
@@ -665,7 +663,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -691,7 +689,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -717,7 +715,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -743,7 +741,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -769,7 +767,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -795,7 +793,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -821,7 +819,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -847,7 +845,7 @@ const HomePage3 = ({}: Props) => {
                           natural lead-in to additional content.
                         </p>
                         <a className="text-gray-500" href="#">
-                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
+                          <span className="inline-block h-3 border-l-2 border-red-600 mr-2" />
                           Europe
                         </a>
                       </div>
@@ -864,7 +862,7 @@ const HomePage3 = ({}: Props) => {
               <div className="flex-shrink max-w-full w-full overflow-hidden">
                 <div className="w-full py-3">
                   <h2 className="text-gray-800 text-2xl font-bold">
-                    <span className="inline-block h-5 border-l-4 border-red-600 mr-2"></span>
+                    <span className="inline-block h-5 border-l-4 border-red-600 mr-2" />
                     CHỨNG NHẬN/CHỨNG CHỈ VỀ TIÊU CHUẨN CHẤT LƯỢNG, GIẢI THƯỞNG
                   </h2>
                 </div>

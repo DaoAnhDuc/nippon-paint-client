@@ -61,7 +61,7 @@ const App = () => {
           className={styleModule.app}
           style={{ background: token.colorBgBase }}
         >
-          <Layout className={styleModule.monitor}>
+          <Layout className={styleModule.monitor} style={{background: '#fff '}}>
             <LoadingTopBar />
             <Router />
             <div className='fixed bottom-40 right-8 z-20'>
